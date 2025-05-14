@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link href="../libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link href="../libs/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
 </head>
 
@@ -60,7 +63,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <div class="hero-content">
+                    <div class="hero-content" data-aos="fade-up">
                         <h1>Australia’s Leading Crane Hire Experts – From East to West</h1>
                         <p>As Australia’s only privately-owned crane hire company operating nationwide, we bring
                             dependable service and decades of experience coast to coast.</p>
@@ -84,7 +87,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="home-boxes-content d-flex justify-content-center align-items-center">
+                    <div class="home-boxes-content d-flex justify-content-center align-items-center" data-aos="fade-up"
+                        data-aos-duration="100">
                         <div>
                             <h2 class="mb-0 pb-0">WA Bookings</h2>
                             <p>WAoperations@qwestcranes.com.au</p>
@@ -93,7 +97,8 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="home-boxes-content d-flex justify-content-center align-items-center">
+                    <div class="home-boxes-content d-flex justify-content-center align-items-center" data-aos="fade-up"
+                        data-aos-duration="300">
                         <div>
                             <h2 class="mb-0 pb-0">QLD Bookings</h2>
                             <p>QLDoperations@qwestcranes.com.au</p>
@@ -102,7 +107,8 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="home-boxes-content d-flex justify-content-center align-items-center">
+                    <div class="home-boxes-content d-flex justify-content-center align-items-center" data-aos="fade-up"
+                        data-aos-duration="500">
                         <div>
                             <p class="mb-0 pb-0">Call for bookings</p>
                             <h2 class="mb-3">1800-CRANEHIRE</h2>
@@ -162,6 +168,10 @@
     </section>
 
     <script src="../libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
