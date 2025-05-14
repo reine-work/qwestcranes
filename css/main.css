@@ -1,6 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  font-family: "Sora", sans-serif;
+  font-family: "Rubik", sans-serif;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1 !important;
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
+.btn {
+  border-radius: 2px !important;
+  padding: 8px 20px !important;
+}
+.btn i {
+  margin-right: 4px;
 }
 
 #header-wrapper {
@@ -9,7 +32,7 @@ body {
 }
 
 .nav-item {
-  border-right: solid 1px #f00;
+  border-right: solid 1px #FFF832;
 }
 .nav-item:last-child {
   border: none;
@@ -19,6 +42,87 @@ body {
   color: #fff;
   padding: 0 1rem !important;
   text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #FFF832;
+}
+
+#hero-wrapper {
+  background: url("../assets/images/qwest-cranes-hero.jpg") no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
+.hero-content h1 {
+  font: bold 56px "Saira";
+  color: #fff;
+}
+.hero-content p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  width: 80%;
+  line-height: 1.5;
+}
+
+.hero-cta img {
+  width: 48px;
+}
+.hero-cta .hero-cta-number {
+  margin-left: 12px;
+}
+.hero-cta .hero-cta-number h2 {
+  font: bold 36px "Saira";
+  font-style: italic;
+  color: #FFF832;
+  margin-bottom: 0.25rem;
+}
+.hero-cta .hero-cta-number h6 {
+  font: 500 18px "Saira";
+  font-style: italic;
+  color: #fff;
+}
+
+#home-boxes {
+  position: relative;
+  top: -100px;
+}
+#home-boxes .home-boxes-content {
+  -webkit-clip-path: polygon(350px 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(350px 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+  background: #FFF1A3;
+  background: linear-gradient(135deg, #FFF1A3, #FFF932);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+}
+
+#home-intro {
+  padding: 3rem 0 5rem 0;
+}
+#home-intro .intro-content-img img {
+  width: 95%;
+}
+#home-intro .intro-content h2 {
+  font: bold 48px "Saira";
+  color: #FFF;
+  margin-bottom: 0.25rem;
+}
+#home-intro .intro-content p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  line-height: 1.5;
+}
+#home-intro .intro-content .intro-list {
+  margin: 1rem 0;
+}
+#home-intro .intro-content .intro-list p {
+  margin-bottom: 0;
+}
+#home-intro .intro-content .intro-list .intro-list-img {
+  margin-right: 24px;
 }
 
 @media only screen and (max-width: 768px) {
