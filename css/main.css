@@ -384,6 +384,50 @@ footer .footer-copyright a {
   margin-right: 12px;
 }
 
+/* SUB-PAGES */
+#loc-search {
+  padding: 5rem 0;
+}
+#loc-search .loc-search-content {
+  text-align: center;
+}
+#loc-search .loc-search-content h1 {
+  font: bold 40px "Saira";
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+#loc-search .loc-search-content p,
+#loc-search .loc-search-content label {
+  font: normal 16px "Rubik";
+  line-height: 1.5;
+  color: #fff;
+}
+#loc-search .loc-search-img img {
+  width: 100%;
+}
+
+.search-results {
+  padding: 2rem;
+  background: #fff;
+}
+.search-results .result-item {
+  -webkit-clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+  background: #FFF1A3;
+  background: linear-gradient(135deg, #FFF1A3, #FFF932);
+  padding: 2rem;
+}
+.search-results .result-item h2 {
+  font: bold 24px "Saira";
+  line-height: 1.5;
+}
+.search-results .result-item p {
+  font: normal 16px "Rubik";
+  line-height: 1.5;
+}
+
+/* RESPONSIVE - MEDIA QUERIES */
 @media only screen and (max-width: 1024px) {
   .sub-menu .nav-item {
     border: none;
@@ -454,6 +498,7 @@ footer .footer-copyright a {
   #home-offer,
   #home-features,
   #home-proj,
+  #loc-search,
   footer {
     padding: 4rem 1rem;
   }
