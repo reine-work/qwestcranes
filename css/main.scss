@@ -504,10 +504,27 @@ footer {
 }
 
 .search-results {
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     background: #fff;
 
     .result-item {
+        clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+        background: #eee;
+        padding: 2rem;
+        margin: 2rem 0;
+
+        h2 {
+            font: bold 24px "Saira";
+            line-height: 1.5;
+        }
+
+        p {
+            font: normal 16px "Rubik";
+            line-height: 1.5;
+        }
+    }
+
+    .result-item.selected {
         clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
         background: #FFF1A3;
         background: linear-gradient(135deg, #FFF1A3, #FFF932);
@@ -522,6 +539,12 @@ footer {
             font: normal 16px "Rubik";
             line-height: 1.5;
         }
+    }
+
+    .map-content {
+        width: 100%;
+        height: 100%;
+        background: #fff;
     }
 }
 
