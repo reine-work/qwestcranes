@@ -37,6 +37,8 @@ img {
 
 
 .main-menu {
+    display: flex;
+    justify-content: end;
     margin-bottom: 0.5rem;
 
     .nav-link {
@@ -53,8 +55,11 @@ img {
 }
 
 .sub-menu {
+    display: flex;
+    justify-content: end;
+
     .nav-item {
-        border-right: solid 1px #FFF832;
+        border-right: solid 1px #fff;
 
         &:last-child {
             border: none;
@@ -62,7 +67,7 @@ img {
     }
 
     .nav-link {
-        color: #fff;
+        color: #FFF832;
         padding: 0 1rem !important;
         text-transform: uppercase;
     }
@@ -70,6 +75,7 @@ img {
     .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show {
         color: #FFF832 !important;
+        opacity: 0.75;
     }
 
 }
@@ -130,6 +136,11 @@ img {
         width: 100%;
         text-align: center;
         padding: 2rem;
+
+        h2 {
+            font: bold 32px "Saira";
+            color: #222;
+        }
     }
 }
 
@@ -207,6 +218,14 @@ img {
         padding: 2rem;
         background: #fff;
         margin-bottom: 2rem;
+
+        &:hover {
+            background: #FFF832;
+        }
+
+        h3 {
+            font: bold 28px "Saira";
+        }
     }
 }
 
@@ -259,6 +278,7 @@ img {
 
 #home-proj {
     padding: 5rem 0;
+    background: #252525;
 
     .proj-header {
         margin-bottom: 3rem;
@@ -281,6 +301,226 @@ img {
             line-height: 1.5;
         }
     }
+
+    .proj-slider {
+        .proj-item {
+            position: relative;
+
+            img {
+                border-radius: 2px;
+            }
+
+            a {
+                position: absolute;
+                left: 1rem;
+                top: 1rem;
+                font: normal 16px "Rubik";
+                color: #fff;
+                line-height: 1.5;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                background: rgba(0, 0, 0, 0.5);
+                border-radius: 2px;
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            z-index: 90;
+
+            .owl-prev {
+                background: #FFF832;
+                width: 35px;
+                height: 35px;
+
+                &:hover {
+                    color: #111;
+                }
+            }
+
+            .owl-next {
+                background: #FFF832;
+                width: 35px;
+                height: 35px;
+
+                &:hover {
+                    color: #111;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 5rem 0;
+    background: url("../assets/images/cranes-4139905_1920.png") no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+
+    .footer-cta {
+        clip-path: polygon(95% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+        background: #FFF1A3;
+        background: linear-gradient(135deg, #FFF1A3, #FFF932);
+        padding: 2rem;
+
+        h2 {
+            font: bold 44px "Saira";
+        }
+
+        p {
+            font: normal 18px "Rubik";
+            line-height: 1.5;
+        }
+    }
+
+    .footer-logo {
+        img {
+            margin: 4rem 0;
+        }
+    }
+
+    .footer-contact {
+        margin: 0 0 2rem 0;
+
+        h4 {
+            font: bold 18px "Saira";
+            line-height: 1.5;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font: bold 28px "Saira";
+            line-height: 1.5;
+            color: #FFF832;
+            margin: 1.5rem 0;
+        }
+
+        p {
+            font: normal 16px "Rubik";
+            line-height: 1.5;
+            color: #fff;
+        }
+    }
+
+    .footer-social {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                display: inline;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-size: 24px;
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+
+    .footer-link-col {
+        gap: 60px;
+    }
+
+    .footer-links {
+        h4 {
+            font: bold 18px "Saira";
+            line-height: 1.5;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                margin: 0.5rem 0;
+
+                a {
+                    font: normal 16px "Rubik";
+                    line-height: 1.5;
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .footer-copyright {
+        margin-top: 4rem;
+
+        p {
+            font: normal 16px "Rubik";
+            line-height: 1.5;
+            color: #fff;
+        }
+
+        a {
+            font: normal 16px "Rubik";
+            line-height: 1.5;
+            color: #fff;
+            text-decoration: none;
+            margin-right: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .sub-menu .nav-item {
+        border: none;
+    }
+
+    .main-menu {
+        margin: 0 -15px;
+        padding-top: 2rem;
+
+        li {
+            margin: 0.25rem 0;
+        }
+    }
+
+    .sub-menu {
+        margin: 2rem -15px 0 -15px;
+        padding: 2rem 0;
+        border-top: solid 1px #222;
+
+        li {
+            margin: 0.25rem 0;
+        }
+    }
+
+    #home-boxes .home-boxes-content {
+        clip-path: polygon(90% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+        margin: 1rem 0;
+    }
+
+    #home-boxes {
+        position: relative;
+        top: 2rem;
+    }
+
+    #home-offer .offer-img {
+        clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+    }
+
+    #hero-wrapper {
+        padding: 10rem 0;
+        height: auto;
+    }
+
+    .footer-links {
+        margin: 2.5rem 0 0 0;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -288,5 +528,83 @@ img {
         img {
             height: 48px;
         }
+    }
+
+    .sub-menu .nav-item {
+        border: none;
+    }
+
+    #header-wrapper {
+        padding: 0.5rem;
+    }
+
+    .main-menu {
+        margin: 0;
+        padding-top: 2rem;
+
+        li {
+            margin: 0.25rem 0;
+        }
+    }
+
+    .sub-menu {
+        margin: 2rem 0 0 0;
+        padding: 2rem 0;
+        border-top: solid 1px #222;
+
+        li {
+            margin: 0.25rem 0;
+        }
+    }
+
+    #hero-wrapper,
+    #home-boxes,
+    #home-offer,
+    #home-features,
+    #home-proj,
+    footer {
+        padding: 4rem 1rem;
+    }
+
+    #home-intro {
+        padding: 0 1rem 4rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 44px;
+    }
+
+    .hero-cta .hero-cta-number h2 {
+        font-size: 32px;
+    }
+
+    #home-boxes {
+        position: relative;
+        top: 0;
+    }
+
+    #home-features .features-box {
+        margin: 1.5rem 0;
+    }
+
+    .offer-header {
+        margin-bottom: 2rem;
+    }
+
+    #home-offer .offer-img {
+        clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+    }
+
+    #home-boxes .home-boxes-content {
+        clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+        margin: 1rem 0;
+    }
+
+    footer .footer-cta {
+        clip-path: polygon(85% 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+    }
+
+    .footer-links {
+        margin: 2.5rem 0 0 0;
     }
 }
