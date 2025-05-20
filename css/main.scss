@@ -35,24 +35,45 @@ img {
     padding: 0.5rem 0;
 }
 
-.nav-item {
-    border-right: solid 1px #FFF832;
 
-    &:last-child {
-        border: none;
+.main-menu {
+    margin-bottom: 0.5rem;
+
+    .nav-link {
+        color: #fff;
+        padding: 0 1rem !important;
+        text-transform: capitalize;
     }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #FFF832;
+    }
+
 }
 
-.nav-link {
-    color: #fff;
-    padding: 0 1rem !important;
-    text-transform: uppercase;
+.sub-menu {
+    .nav-item {
+        border-right: solid 1px #FFF832;
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    .nav-link {
+        color: #fff;
+        padding: 0 1rem !important;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: #FFF832 !important;
+    }
+
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-    color: #FFF832;
-}
 
 #hero-wrapper {
     background: url("../assets/images/qwest-cranes-hero.jpg") no-repeat;
@@ -145,6 +166,92 @@ img {
             .intro-list-img {
                 margin-right: 24px;
             }
+        }
+    }
+}
+
+#home-offer {
+    padding: 5rem 0 3rem 0;
+    background: #252525;
+
+    .offer-header {
+        small {
+            font: normal 14px "Rubik";
+            color: #777;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font: bold 44px "Saira";
+            color: #fff;
+        }
+
+        p {
+            font: normal 18px "Rubik";
+            color: #fff;
+            line-height: 1.5;
+        }
+    }
+
+    .offer-img {
+        clip-path: polygon(350px 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+        height: 275px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .offer-box {
+        padding: 2rem;
+        background: #fff;
+        margin-bottom: 2rem;
+    }
+}
+
+#home-features {
+    padding: 5rem 0;
+
+    .features-header {
+        text-align: center;
+
+        small {
+            font: normal 14px "Rubik";
+            color: #777;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font: bold 44px "Saira";
+            color: #fff;
+        }
+
+        p {
+            font: normal 18px "Rubik";
+            color: #fff;
+            line-height: 1.5;
+        }
+    }
+
+    .features-box {
+        text-align: center;
+
+        img {
+            margin-bottom: 2rem;
+        }
+
+        h3 {
+            font: bold 32px "Saira";
+            color: #FFF832;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            font: normal 18px "Rubik";
+            color: #fff;
+            line-height: 1.5;
         }
     }
 }

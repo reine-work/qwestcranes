@@ -31,22 +31,33 @@ img {
   padding: 0.5rem 0;
 }
 
-.nav-item {
-  border-right: solid 1px #FFF832;
+.main-menu {
+  margin-bottom: 0.5rem;
 }
-.nav-item:last-child {
-  border: none;
+.main-menu .nav-link {
+  color: #fff;
+  padding: 0 1rem !important;
+  text-transform: capitalize;
+}
+.main-menu .navbar-nav .nav-link.active,
+.main-menu .navbar-nav .nav-link.show {
+  color: #FFF832;
 }
 
-.nav-link {
+.sub-menu .nav-item {
+  border-right: solid 1px #FFF832;
+}
+.sub-menu .nav-item:last-child {
+  border: none;
+}
+.sub-menu .nav-link {
   color: #fff;
   padding: 0 1rem !important;
   text-transform: uppercase;
 }
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  color: #FFF832;
+.sub-menu .navbar-nav .nav-link.active,
+.sub-menu .navbar-nav .nav-link.show {
+  color: #FFF832 !important;
 }
 
 #hero-wrapper {
@@ -123,6 +134,77 @@ img {
 }
 #home-intro .intro-content .intro-list .intro-list-img {
   margin-right: 24px;
+}
+
+#home-offer {
+  padding: 5rem 0 3rem 0;
+  background: #252525;
+}
+#home-offer .offer-header small {
+  font: normal 14px "Rubik";
+  color: #777;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+#home-offer .offer-header h2 {
+  font: bold 44px "Saira";
+  color: #fff;
+}
+#home-offer .offer-header p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  line-height: 1.5;
+}
+#home-offer .offer-img {
+  -webkit-clip-path: polygon(350px 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+          clip-path: polygon(350px 0, 100% 50px, 100% 100%, 0 100%, 0 0);
+  height: 275px;
+}
+#home-offer .offer-img img {
+  width: 100%;
+}
+#home-offer .offer-box {
+  padding: 2rem;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+#home-features {
+  padding: 5rem 0;
+}
+#home-features .features-header {
+  text-align: center;
+}
+#home-features .features-header small {
+  font: normal 14px "Rubik";
+  color: #777;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+#home-features .features-header h2 {
+  font: bold 44px "Saira";
+  color: #fff;
+}
+#home-features .features-header p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  line-height: 1.5;
+}
+#home-features .features-box {
+  text-align: center;
+}
+#home-features .features-box img {
+  margin-bottom: 2rem;
+}
+#home-features .features-box h3 {
+  font: bold 32px "Saira";
+  color: #FFF832;
+  margin-bottom: 0.25rem;
+}
+#home-features .features-box p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  line-height: 1.5;
 }
 
 @media only screen and (max-width: 768px) {
