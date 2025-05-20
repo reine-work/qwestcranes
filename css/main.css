@@ -174,6 +174,7 @@ img {
 }
 #home-features .features-header {
   text-align: center;
+  margin-bottom: 3rem;
 }
 #home-features .features-header small {
   font: normal 14px "Rubik";
@@ -202,6 +203,28 @@ img {
   margin-bottom: 0.25rem;
 }
 #home-features .features-box p {
+  font: normal 18px "Rubik";
+  color: #fff;
+  line-height: 1.5;
+}
+
+#home-proj {
+  padding: 5rem 0;
+}
+#home-proj .proj-header {
+  margin-bottom: 3rem;
+}
+#home-proj .proj-header small {
+  font: normal 14px "Rubik";
+  color: #777;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+#home-proj .proj-header h2 {
+  font: bold 44px "Saira";
+  color: #fff;
+}
+#home-proj .proj-header p {
   font: normal 18px "Rubik";
   color: #fff;
   line-height: 1.5;

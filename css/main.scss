@@ -215,6 +215,7 @@ img {
 
     .features-header {
         text-align: center;
+        margin-bottom: 3rem;
 
         small {
             font: normal 14px "Rubik";
@@ -246,6 +247,32 @@ img {
             font: bold 32px "Saira";
             color: #FFF832;
             margin-bottom: 0.25rem;
+        }
+
+        p {
+            font: normal 18px "Rubik";
+            color: #fff;
+            line-height: 1.5;
+        }
+    }
+}
+
+#home-proj {
+    padding: 5rem 0;
+
+    .proj-header {
+        margin-bottom: 3rem;
+
+        small {
+            font: normal 14px "Rubik";
+            color: #777;
+            line-height: 1.5;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font: bold 44px "Saira";
+            color: #fff;
         }
 
         p {
